@@ -25,3 +25,14 @@ app.get("/hello", (req, res) => {
     console.log("Getting request...");
     res.send("hi");
   });
+
+  app.get("/getuserdetail", (req, res) => {
+    var uN = req.username;
+    var pass = req.password;
+    if(username === "chetan" && password === "pass1"){
+      res.send("Login Successful");
+
+    }else{
+      res.send("Login Failed");
+    }
+  });
