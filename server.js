@@ -27,8 +27,8 @@ app.get("/hello", (req, res) => {
   });
 
   app.get("/getuserdetail", (req, res) => {
-    var uN = req.username;
-    var pass = req.password;
+    var uN = req.query.username;
+    var pass = req.query.password;
     if(username === "chetan" && password === "pass1"){
       res.send("Login Successful");
 
